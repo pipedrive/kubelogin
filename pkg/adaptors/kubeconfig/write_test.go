@@ -1,7 +1,6 @@
 package kubeconfig
 
 import (
-	"io/ioutil"
 	"os"
 	"testing"
 )
@@ -27,14 +26,14 @@ func TestKubeconfig_UpdateAuth(t *testing.T) {
 		}); err != nil {
 			t.Fatalf("Could not update auth: %s", err)
 		}
-		b, err := ioutil.ReadFile(f.Name())
+		b, err := os.ReadFile(f.Name())
 		if err != nil {
 			t.Fatalf("Could not read kubeconfig: %s", err)
 		}
 
 		want := `apiVersion: v1
-clusters: []
-contexts: []
+clusters: null
+contexts: null
 current-context: ""
 kind: Config
 preferences: {}
@@ -76,14 +75,14 @@ users:
 		}); err != nil {
 			t.Fatalf("Could not update auth: %s", err)
 		}
-		b, err := ioutil.ReadFile(f.Name())
+		b, err := os.ReadFile(f.Name())
 		if err != nil {
 			t.Fatalf("Could not read kubeconfig: %s", err)
 		}
 
 		want := `apiVersion: v1
-clusters: []
-contexts: []
+clusters: null
+contexts: null
 current-context: ""
 kind: Config
 preferences: {}
@@ -120,7 +119,7 @@ users:
         config:
           idp-issuer-url: https://accounts.google.com
         name: oidc`
-	f, err := ioutil.TempFile("", "kubeconfig")
+	f, err := os.CreateTemp("", "kubeconfig")
 	if err != nil {
 		t.Fatalf("Could not create a file: %s", err)
 	}
