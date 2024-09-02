@@ -10,7 +10,7 @@ require (
 	github.com/golang-jwt/jwt/v4 v4.4.1
 	github.com/golang/mock v1.4.4
 	github.com/google/wire v0.3.0
-	github.com/pipedrive/oauth2cli v1.8.2-pipedrive.0.20211027140131-4b9ebd5614fa
+	github.com/pipedrive/oauth2cli v1.8.2-pipedrive.0.20220517140153-72f763dd51b4
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8
 	github.com/spf13/cobra v0.0.5
 	github.com/spf13/pflag v1.0.5
