@@ -7,7 +7,8 @@ toolchain go1.21.3
 require (
 	github.com/coreos/go-oidc v2.1.0+incompatible
 	github.com/go-test/deep v1.0.4
-	github.com/golang-jwt/jwt/v4 v4.4.1
+	github.com/golang-jwt/jwt/v4 v4.5.0
+	github.com/golang-jwt/jwt/v5 v5.2.1
 	github.com/golang/mock v1.4.4
 	github.com/google/wire v0.3.0
 	github.com/pipedrive/oauth2cli v1.8.2-pipedrive.0.20211027140131-4b9ebd5614fa
