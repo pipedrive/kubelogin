@@ -12,7 +12,7 @@ require (
 	github.com/google/wire v0.3.0
 	github.com/pipedrive/oauth2cli v1.8.2-pipedrive.0.20211027140131-4b9ebd5614fa
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8
-	github.com/spf13/cobra v0.0.5
+	github.com/spf13/cobra v1.8.1
 	github.com/spf13/pflag v1.0.5
 	golang.org/x/oauth2 v0.10.0
 	golang.org/x/sync v0.5.0
@@ -31,7 +31,7 @@ require (
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/imdario/mergo v0.3.6 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/int128/listener v1.1.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kr/text v0.2.0 // indirect
